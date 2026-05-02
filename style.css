@@ -1,0 +1,160 @@
+body {
+    margin: 0;
+    font-family: Arial;
+    background: #0f172a;
+    color: white;
+}
+
+/* NAVBAR */
+nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background: #020617;
+    position: sticky;
+    top: 0;
+}
+
+nav a {
+    color: white;
+    margin: 10px;
+    text-decoration: none;
+}
+
+/* HERO */
+.hero {
+    display: flex;
+    justify-content: center;   /* center everything */
+    align-items: center;
+    gap: 80px;                 /* space between text & image */
+    padding: 60px;
+}
+
+.hero-text {
+    max-width: 500px;
+}
+
+.gradient-text {
+    background: linear-gradient(90deg, #3b82f6, #9333ea);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+button {
+    background: #3b82f6;
+    border: none;
+    padding: 10px 20px;
+    color: white;
+    border-radius: 8px;
+    margin-top: 10px;
+    transition: 0.3s;
+    
+}
+.icon {
+    font-size: 40px;
+    margin-bottom: 10px;
+    color: #3b82f6;
+}
+button:hover {
+    background: #2563eb;
+    box-shadow: 0 0 15px #3b82f6;
+}
+
+/* PROFILE */
+.profile {
+    width: 200px;
+    border-radius: 20px;
+}
+
+/* SECTIONS */
+section {
+    text-align: center;
+    padding: 60px;
+    border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+/* CARDS (IMPORTANT FOR STEP 6) */
+.cards {
+    display: flex;
+    justify-content: center;   /* center horizontally */
+    align-items: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.card {
+    background: #1e293b;
+    padding: 25px;
+    border-radius: 15px;
+    width: 250px;
+    text-align: center;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0 25px rgba(59,130,246,0.6);
+}
+
+/* SMOOTH SCROLL */
+html {
+    scroll-behavior: smooth;
+}
+
+#skills {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#skills h2 {
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    color: #3b82f6;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    text-decoration: underline;
+}
+
+/* MOBILE RESPONSIVE */
+@media (max-width: 768px) {
+
+    /* HERO STACK */
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 30px;
+    }
+
+    .profile {
+        width: 150px;
+    }
+
+    /* NAVBAR */
+    nav {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* CARDS STACK */
+    .cards {
+        flex-direction: column;
+    }
+
+    /* TEXT SIZE */
+    h1 {
+        font-size: 24px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
